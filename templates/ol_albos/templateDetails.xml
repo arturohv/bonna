@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+<name>ol_albos</name>
+<creationDate>2013</creationDate>
+<version>1.0.9</version>
+<author>olwebdesign</author>
+<authorUrl>http://www.olwebdesign.com</authorUrl>
+	<description><![CDATA[
+<script src="../templates/ol_albos/admin/jscolor/jscolor.js" type="text/javascript"></script>
+<link rel="stylesheet" href="../templates/ol_albos/admin/params.css" type="text/css" />
+<h1>olwebdesign Joomla 2.5 - 3.x Template.</h1>
+<a href="http://www.olwebdesign.com/"><img src="../templates/ol_albos/template_thumbnail.png" style="float:left;margin-bottom:10px;border:1px solid #ccc;padding:2px" /></a><p style="clear:left;margin:10px 0;font-size:110%;">ol_albos professional Joomla template form olwebdeisgn. This template is a fast loading and clean design.</p>
+<p style="clear:left;margin:10px 0;font-size:110%;">For horizontal menu in your modules chose position mainmenu and in Advanced Options for Module Class Suffix write  _menu ol_smenu. <a href="http://www.olwebdesign.com/images/stories/pdf/olweb_menu.pdf">Download the pdf file file</a></p>
+]]></description>
+	
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>header</folder>
+		<folder>admin</folder>
+		<folder>js</folder>
+		<folder>fonts</folder>
+		<folder>rs-plugin</folder>
+		<folder>languages</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>icons.txt</filename>
+		<filename>favicon.ico</filename>
+		<filename>footer.php</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+	</files>	
+	<positions>            
+		<position>search</position>
+		<position>bookmark</position>
+		<position>mainmenu</position>		
+		<position>top_1</position>
+		<position>top_2</position>
+		<position>top_3</position>
+		<position>top_4</position>
+		<position>top_5</position>
+		<position>top_6</position>		
+		<position>maintop_1</position>
+		<position>maintop_2</position>
+		<position>maintop_3</position>
+		<position>maintop_4</position>
+		<position>maintop_5</position>
+		<position>maintop_6</position>		
+		<position>mainbottom_1</position>
+		<position>mainbottom_2</position>
+		<position>mainbottom_3</position>
+		<position>mainbottom_4</position>
+		<position>mainbottom_5</position>
+		<position>mainbottom_6</position>		
+		<position>left</position>
+		<position>right</position>		
+		<position>bottom_1</position>
+		<position>bottom_2</position>
+		<position>bottom_3</position>
+		<position>bottom_4</position>
+		<position>bottom_5</position>
+		<position>bottom_6</position>		
+		<position>breadcrumbs</position>		
+		<position>header</position>				
+		<position>info</position>		
+	</positions>
+	
+	<languages folder="languages">
+		<language tag="en-GB">en-GB/en-GB.tpl_ol_albos.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params" >
+			<fieldset name="logo" description="" label="TPL_MXJOOMLA_PARAMS_LOGO">
+
+					<field name="showDefaultLogo" type="radio" default="1" label="TPL_MXJOOMLA_SHOW_DEFAULT_LOGO_LABEL" description="TPL_MXJOOMLA_SHOW_DEFAULT_LOGO_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+					</field>
+
+					<field name="defaultLogo" type="imagelist" default="logo.png" label="TPL_MXJOOMLA_DEFAULT_LOGO_LABEL" description="TPL_MXJOOMLA_DEFAULT_LOGO_DESC" directory="/templates/ol_albos/images/logo" hide_default="no" exclude="" stripext="" />
+
+					<field name="showMediaLogo" type="radio" default="0" label="TPL_MXJOOMLA_SHOW_MEDIA_LOGO_LABEL" description="TPL_MXJOOMLA_SHOW_MEDIA_LOGO_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+					</field>
+
+					<field name="mediaLogo" type="media" label="TPL_MXJOOMLA_MEDIA_LOGO_LABEL" description="TPL_MXJOOMLA_MEDIA_LOGO_DESC" />
+
+					<field name="showTextLogo" type="radio" default="0" label="TPL_MXJOOMLA_SHOW_TEXT_LOGO_LABEL" description="TPL_MXJOOMLA_SHOW_TEXT_LOGO_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+					</field>
+
+					<field name="textLogo"  type="textarea" default="text here..." rows="1" cols="40"
+						label="TPL_MXJOOMLA_TEXT_LOGO_LABEL"
+						description="TPL_MXJOOMLA_TEXT_LOGO_DESC" />				
+
+					<field name="showSlogan" type="radio" default="0" label="TPL_MXJOOMLA_SHOW_LOGO_SLOGAN" description="TPL_MXJOOMLA_SHOW_LOGO_SLOGAN_DESC">
+					  <option value="1">Yes</option>
+					  <option value="0">No</option>
+					</field>
+
+					<field name="slogan" type="textarea" default="text here..." label="TPL_MXJOOMLA_LOGO_SLOGAN_LABEL" description="TPL_MXJOOMLA_LOGO_SLOGAN_DESC" rows="1" cols="40"></field>
+
+			</fieldset>			
+			<fieldset name="style" description="" label="TPL_MXJOOMLA_PARAMS_STYLE">
+				<field name="max_sitewidth" type="text" size="10" default="940" label="Max Site Width" description="Set the maximum width of the site in pixels." filter="int" />	
+					<field name="headpos" type="radio" default="relative" label="Position of top header" description="Position of top header where is the horozontal menu">
+						<option value="relative">Relative</option>
+						<option value="fixed">Fixed</option>
+						<option value="absolute">Absolute</option>
+					</field>
+				<field name="top_height" type="text" size="10" default="140" label="Height fix for top header" description="This is height fix for top header if select the position Fixed os Absolute. Size in px." />			
+
+			</fieldset>
+			
+			<fieldset name="icons" description="" label="TPL_MXJOOMLA_PARAMS_ICONS">
+				<field name="socialCode" type="radio" default="1" label="TPL_MXJOOMLA_SOCIAL_LABEL" description="TPL_MXJOOMLA_SOCIAL_DESC">
+					  <option value="1">Yes</option>
+					  <option value="0">No</option>
+			    </field>									
+			<field name="facebook_icon" type="text" default="" label="Your facebook Url" description="Your facebook Url" />
+			<field name="twitter_icon" type="text" default="" label="Your twitter Url" description="Your twitter Url" />
+			<field name="digg_icon" type="text" default="" label="Your digg_ Url" description="Your digg_ Url" />
+			<field name="google_icon" type="text" default="" label="Your Google Url" description="Your Google Url" />
+			<field name="myspace_icon" type="text" default="" label="Your myspace Url" description="Your myspace Url" />
+			<field name="linkedin_icon" type="text" default="" label="Your linkedin Url" description="Your linkedin Url" />
+			<field name="blogger_icon" type="text" default="" label="Your blogger Url" description="Your blogger Url" />
+			<field name="flickr_icon" type="text" default="" label="Your flickr Url" description="Your flickr Url" />
+			<field name="stumble_icon" type="text" default="" label="Your stumble Url" description="Your stumble Url" />
+			<field name="pinterest_icon" type="text" default="" label="Your pinterest Url" description="Your pinterest Url" />
+			<field name="rssfeed_icon" type="text" default="" label="Your rssfeed Url" description="Your rssfeed Url" />
+			</fieldset>	
+			<fieldset name="header"  description="" label="TPL_MXJOOMLA_PARAMS_HEADER">
+				<field name="slides" type="list" default="1" label="Slideshow" description="To only show the Slideshow on specific pages, select [Show only in header]. Create an empty module and assign it to header. Use this module to control which pages have header visible">
+				    <option value="1">Show on all pages</option>
+				    <option value="2">Show only in header</option>
+				    <option value="0">Hide</option>
+			    </field>
+		<field name="headHeigh" type="text" default="500" label="Header Height" description="Put a number for the header height" />				    
+		<field name="banner" type="list" default="on" label="Stop Banner Timet at Hover on Slide" description="Stop Banner Timet at Hover on Slide on/off.">
+			<option value="off">Off</option>
+			<option value="on">On</option>
+		</field>
+		<field name="menu" type="list" default="bullet" label="Navigation Type" description="Navigation Type bullet, thumb, none.">
+			<option value="bullet">Bullet</option>
+			<option value="thumb">Thumb</option>
+			<option value="none">None</option>
+		</field>							
+		<field name="navarrow" type="list" default="nexttobullets" label="Navigation Arrows" description="Navigation Arrows.">
+			<option value="nexttobullets">Next to bullets</option>
+			<option value="verticalcentered">Vertical centered</option>
+			<option value="none">None</option>
+		</field>							
+		<field name="styles" type="list" default="round" label="Navigation Style" description="Navigation Style round,square,navbar.">
+			<option value="round">Round</option>
+			<option value="square">Square</option>
+			<option value="navbar">Navbar</option>
+		</field>				
+		<field name="speed" type="list" default="7000" label="Speed of Annimation" description="This is the time at which the annimation happens.">
+			<option value="4000">4 Seconds</option>
+			<option value="5000">5 Seconds</option>
+			<option value="6000">6 Seconds</option>
+			<option value="7000">7 Seconds</option>
+			<option value="8000">8 Seconds</option>
+			<option value="9000">9 Seconds</option>
+			<option value="10000">10 Seconds</option>
+			<option value="11000">11 Seconds</option>
+			<option value="12000">12 Seconds</option>
+			<option value="13000">13 Seconds</option>
+			<option value="14000">14 Seconds</option>
+			<option value="15000">15 Seconds</option>
+			<option value="20000">20 Seconds</option>
+			<option value="30000">30 Seconds</option>
+		</field>
+		<field name="text1Heigh" type="text" default="200" label="First text line height position" description="First text line height position" />		
+		<field name="text2Heigh" type="text" default="270" label="Second text line height position" description="Second text line height position" />	
+		<field name="text3Heigh" type="text" default="320" label="Read more height position" description="Read more height position" />			
+		<field name="spacer" type="spacer" class="text" label="First Slide"/>		
+		<field name="jukenburn_thumb1" type="media" default="" label="Slider Image 1" description="Please choose an image..." />	
+		<field name="jukenburn_texts1" type="text" default="" label="First line text for first slide (PRO Edition)" description="Write here first line text for first slide" disabled="true"  />
+		<field name="jukenburn_desc1" type="text" default="" label="Third line text for first slide (PRO Edition)" description="Write here third line text for first slide" disabled="true"  />
+		<field name="jukenburn_text1" type="text" default="" label="Read more link (PRO Edition)" description="Link for read more button" disabled="true"  />
+		<field name="spacer1" type="spacer" class="text" label="Second Slide"/>	
+		<field name="jukenburn_thumb2" type="media" default="" label="Slider Image 2" description="Please choose an image..." />	
+		<field name="jukenburn_texts2" type="text" default="" label="First line text for second slide (PRO Edition)" description="Write here first line text for second slide" disabled="true"  />
+		<field name="jukenburn_desc2" type="text" default="" label="Third line text for second slide (PRO Edition)" description="Write here third line text for second slide" disabled="true"  />
+		<field name="jukenburn_text2" type="text" default="" label="Read more link (PRO Edition)" description="Link for read more button" disabled="true" />
+		<field name="spacer2" type="spacer" class="text" label="Third Slide"/>
+		<field name="jukenburn_thumb3" type="media" default="" label="Slider Image 3" description="Please choose an image..." />	
+		<field name="jukenburn_texts3" type="text" default="" label="First line text for third slide (PRO Edition)" description="Write here first line text for third slide" disabled="true" />
+		<field name="jukenburn_desc3" type="text" default="" label="Third line text for third slide (PRO Edition)" description="Write here third line text for third slide" disabled="true" />
+		<field name="jukenburn_text3" type="text" default="" label="Read more link (PRO Edition)" description="Link for read more button" disabled="true" />
+		<field name="spacer3" type="spacer" class="text" label="Fourth Slide"/>
+		<field name="jukenburn_thumb4" type="media" default="" label="Slider Image 4" description="Please choose an image..." />	
+		<field name="jukenburn_texts4" type="text" default="" label="First line text for fourth slide (PRO Edition)" description="Write here first line text for fourth slide" disabled="true" />
+		<field name="jukenburn_desc4" type="text" default="" label="Third line text for fourth slide (PRO Edition)" description="Write here third line text for fourth slide" disabled="true" />
+		<field name="jukenburn_text4" type="text" default="" label="Read more link (PRO Edition)" description="Link for read more button" disabled="true" />
+		<field name="spacer4" type="spacer" class="text" label="Fifth Slide"/>
+		<field name="jukenburn_thumb5" type="media" default="" label="Slider Image 5" description="Please choose an image..." />
+		<field name="jukenburn_texts5" type="text" default="" label="First line text for slide 5 (PRO Edition)" description="Write here first line text for slide 5" disabled="true" />
+		<field name="jukenburn_desc5" type="text" default="" label="Third line text for fifth slide (PRO Edition)" description="Write here third line text for fifth slide" disabled="true" />
+		<field name="jukenburn_text5" type="text" default="" label="Read more link (PRO Edition)" description="Link for read more button" disabled="true" />						
+
+			</fieldset>			
+			<fieldset name="colors" description="" label="TPL_MXJOOMLA_PARAMS_COLORS">		
+			 <field type="spacer" default="" label="ONLY_IN_PRO" description=""/>	
+			 <field type="spacer" default="" label="TPL_MXJOOMLA_PARAMS_COLORS_BGR" description="TPL_MXJOOMLA_PARAMS_COLORS_BGR_DESC"/>
+			 <field name="bg1" class="color {required:false}" type="text" default="" label="Background Site Color" description="Ouside Site Background color." disabled="true" />
+			 <field name="bg2" class="color {required:false}" type="text" default="" label="Footer text Color" description="Footer text Color." disabled="true" />	
+			 <field type="spacer" default="" label="TPL_MXJOOMLA_PARAMS_COLORS_TOP" description="TPL_MXJOOMLA_PARAMS_COLORS_TOP_DESC"  />
+			 <field name="bg3" class="color {required:false}" type="text" default="" label="Top Background" description=" Background Color for Top part where is horizontal menu" disabled="true" />
+			 <field name="bg4" class="color {required:false}" type="text" default="" label="Top Text" description="Top Text Color." disabled="true" />
+			 <field name="bg5" class="color {required:false}" type="text" default="" label="Top link" description="Top link Color." disabled="true" />	
+			 <field type="spacer" default="" label="TPL_MXJOOMLA_PARAMS_COLORS_HEADER" description="TPL_MXJOOMLA_PARAMS_COLORS_HEADER_DESC"/>
+			 <field name="bg6" class="color {required:false}" type="text" default="" label="Header Background" description="Header Background Color." disabled="true" />
+			 <field name="bg7" class="color {required:false}" type="text" default="" label="Header Text" description="Header Text Color." disabled="true" />
+			 <field type="spacer" default="" label="TPL_MXJOOMLA_PARAMS_COLORS_MAINB" description="TPL_MXJOOMLA_PARAMS_COLORS_MAINB_DESC" />
+			 <field name="bg8" class="color {required:false}" type="text" default="" label="Main Body Background" description="Main Body Background Color." disabled="true" />
+			 <field name="bg9" class="color {required:false}" type="text" default="" label="Main Body text Color" description="Main Body text Color." disabled="true" />
+			 <field name="bg10" class="color {required:false}" type="text" default="" label="Main Body Link color" description="Main Body Link color."  disabled="true" />	
+			 <field name="bg11" class="color {required:false}" type="text" default="" label="Main Body Link hover" description="Main Body Link hover."  disabled="true" />		 			
+			</fieldset>
+			<fieldset name="analytics" description="" label="TPL_MXJOOMLA_ANALYTICS">		
+			 <field type="spacer" default="" label="ONLY_IN_PRO" description=""/>
+				<field name="analyticsCode" type="textarea" label="TPL_MXJOOMLA_ANALYTICS_LABEL" description="TPL_MXJOOMLA_ANALYTICS_DESC" disabled="true" />		
+			</fieldset>
+			<fieldset name="responsive" description="" label="TPL_MXJOOMLA_RESPONSIVE">		
+			 <field type="spacer" default="" label="ONLY_IN_PRO" description=""/>
+				<field name="responsiveCode" type="radio" default="1" label="TPL_MXJOOMLA_RESPONSIVE_LABEL" description="TPL_MXJOOMLA_RESPONSIVE_DESC">
+					  <option value="1" disabled="true" >Yes</option>
+					  <option value="0" disabled="true" >No</option>
+			    </field>
+				<field name="show_menu_text" type="input" default="Select a Page" label="'Show Menu' Button Text" description="Enter the text you want to appear first in the select-list navigation for small resolutions." disabled="true" />	
+			</fieldset>
+		</fields>
+	</config>
+</extension>
