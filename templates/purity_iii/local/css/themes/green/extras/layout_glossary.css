@@ -34,7 +34,7 @@
 .glossary-nav nav .nav-pills > li > a:hover,
 .glossary-nav nav .nav-pills > li > a:active,
 .glossary-nav nav .nav-pills > li > a:focus {
-  background: #65e84b;
+  background: #1aac4b;
   color: #fff;
 }
 @media screen and (min-width: 991px) {
@@ -80,6 +80,6 @@
 .glossary-group-items ul > li > a:hover,
 .glossary-group-items ul > li > a:active,
 .glossary-group-items ul > li > a:focus {
-  color: #65e84b;
+  color: #1aac4b;
   text-decoration: none;
 }
