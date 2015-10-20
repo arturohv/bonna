@@ -54,8 +54,8 @@ class JConfig {
 	public $sef_suffix = '0';
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
-	public $log_path = '/srv/www/htdocs/bonna/logs';
-	public $tmp_path = '/srv/www/htdocs/bonna/tmp';
+	public $log_path = '/var/www/html/bonna/logs';
+	public $tmp_path = '/var/www/html/bonna/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
 	public $memcache_persist = '1';
